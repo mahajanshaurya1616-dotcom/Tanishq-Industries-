@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0A2540; /* Deep Navy Blue */
+  --color-secondary: #F59E0B; /* Vibrant Amber */
+  --color-light: #F8FAFC; /* Slate Off-White */
+  --color-dark: #1E293B; /* Slate Dark */
+  --color-slate: #475569; /* Slate Gray */
+}
+
+/* Base resets and global styles */
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #1E293B;
+  background-color: #F8FAFC;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* Custom Utilities (Animations etc) */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
